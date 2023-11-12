@@ -1,19 +1,28 @@
+/* o root é uma pseudoclasse CSS que representa o elemento pai de nível mais alto no documento HTML. É frequentemente usado para definir estilos globais e variáveis ​​CSS. */
 :root {
   --background-body: #E5E5E5;
   --background-content: #1D1D1D;
   --text-color: #292929;
   --primary-color: #4DFF7C;
   --second-color: #89DDFF;
+
+  /* Ao definir essas variáveis ​​em :rootnível, elas se tornam variáveis ​​globais que podem ser facilmente acessadas e reutilizadas em todo o processo. */
 }
 
+/* estilizando todo o corpo da página */
 body {
+  /* removenedo qualquer margem padrão que os navegadores possam aplicar ao elemento body */
   margin: 0;
+  /* definindo o tamanho e a família de fontes. Segue abaixo a lista de fontes */
   font-size: 1rem;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
+
+  /* define a suavização da fonte-webkit-font-smoothing. Melhora a aparência do texto */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* define a cor de fundo do elemento body ao valor da variável CSS */
   background-color: var(--background-body);
   color: var(--text-color);
 }
